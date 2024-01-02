@@ -1,0 +1,5 @@
+package com.board.jooboard.config;
+
+public class MySQLConfig {
+
+}

@@ -1,0 +1,9 @@
+package com.board.joo.dao;
+
+import java.util.List;
+
+import com.board.jooboard.dto.TestDTO;
+
+public interface TestDAO {
+	List<TestDTO> getTestData();
+}

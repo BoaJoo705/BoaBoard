@@ -19,7 +19,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
@@ -33,6 +33,21 @@
 		    <artifactId>lombok</artifactId>
 		    <optional>true</optional>
 		</dependency>
+		
+		<!-- JAVA 가 MySQL과 통신할 수 있게하는 드라이버 -->
+		<dependency>
+		    <groupId>com.mysql</groupId>
+		    <artifactId>mysql-connector-j</artifactId>
+		    <scope>runtime</scope>
+		</dependency>
+		
+		<!--Spring Boot 용 Mybatis-->
+		<dependency>
+		    <groupId>org.mybatis.spring.boot</groupId>
+		    <artifactId>mybatis-spring-boot-starter</artifactId>
+		    <version>3.0.3</version>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
