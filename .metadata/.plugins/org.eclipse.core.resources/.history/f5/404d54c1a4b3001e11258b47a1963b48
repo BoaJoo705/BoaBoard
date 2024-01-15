@@ -1,0 +1,26 @@
+package com.board.jooboard.board.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.board.jooboard.board.vo.Board;
+import com.board.jooboard.boardDao.BoardDao;
+
+@Service
+public class BoardService {
+	
+	@Autowired
+	private BoardDao boardDao;
+	
+	@Transactional
+	public Board insert(Board board) {
+		board.setBoardId(0);
+		board.setUserId("joo");
+		System.out.println("BoardService insert 진입 ");
+		System.out.println("board"+board);
+		Board insertboard = boardDao.insert(board); 
+		return insertboard;
+	}
+
+}

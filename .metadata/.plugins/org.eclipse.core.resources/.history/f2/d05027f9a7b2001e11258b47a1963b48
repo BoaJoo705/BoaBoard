@@ -1,0 +1,18 @@
+package com.board.jooboard.board.service;
+
+import org.springframework.stereotype.Service;
+
+import com.board.jooboard.board.vo.Board;
+import com.board.jooboard.boardDao.BoardDao;
+
+@Service
+public class BoardService {
+
+	private final BoardDao boardDao;
+	
+	public Board insert(Board board) {
+		Board insertboard = boardDao.insert(board); 
+		return insertboard;
+	}
+
+}

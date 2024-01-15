@@ -1,0 +1,13 @@
+package com.board.jooboard.boardDao;
+
+
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
+
+import com.board.jooboard.board.vo.Board;
+
+@Mapper
+public interface BoardDao {
+	System.out.println("BoardDao 진입 ");
+	Board insert(Board board);
+}

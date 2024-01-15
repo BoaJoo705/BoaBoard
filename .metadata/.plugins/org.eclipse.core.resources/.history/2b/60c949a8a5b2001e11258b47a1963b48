@@ -1,0 +1,15 @@
+package com.board.jooboard.board.service;
+
+import com.board.jooboard.board.vo.Board;
+import com.board.jooboard.boardDao.BoardDao;
+
+public class BoardService {
+
+	private final BoardDao boardDao;
+	
+	public Board insert(Board board) {
+		Board board = boardDao.insert(board); 
+		return null;
+	}
+
+}

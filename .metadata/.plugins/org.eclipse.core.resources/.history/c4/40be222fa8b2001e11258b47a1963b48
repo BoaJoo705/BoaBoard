@@ -1,0 +1,11 @@
+package com.board.jooboard.boardDao;
+
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
+
+import com.board.jooboard.board.vo.Board;
+
+@Mapper
+public interface BoardDao {
+	void insert(Board board);
+}

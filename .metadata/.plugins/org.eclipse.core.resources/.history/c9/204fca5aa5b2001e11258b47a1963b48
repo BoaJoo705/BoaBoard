@@ -1,0 +1,23 @@
+package com.board.jooboard.board.controller;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.board.jooboard.board.service.BoardService;
+import com.board.jooboard.board.vo.Board;
+
+@RestController
+@RequestMapping("/api/boards")
+public class BoardRestController {
+	private final BoardService boardService;
+	
+	@PostMapping
+	public ResponseEntity<?> insertBoard(@RequestBody Board board){
+		Board insertBoard = boardService.insert(board);
+		return new ResponseEntity<>(insertBoard,HttpStatus.OK)
+	}
+}
