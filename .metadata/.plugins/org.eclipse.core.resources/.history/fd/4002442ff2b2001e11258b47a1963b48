@@ -1,0 +1,31 @@
+package com.board.jooboard.board.vo;
+
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import lombok.Data;
+
+
+@Data
+@EntityScan
+public class Board {
+	private int boardId;
+	
+	private String userId;
+	
+	private String boardTitle;
+	
+	private String boardContent;
+	
+	private String boardCnt;
+	
+	private String delYn;
+	
+	private String regDt;
+	
+	private String modDt;
+	
+	private String atchYn;
+	
+	
+	
+}

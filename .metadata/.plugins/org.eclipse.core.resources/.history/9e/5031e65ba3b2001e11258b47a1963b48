@@ -1,0 +1,5 @@
+package com.board.jooboard.board.service;
+
+public class BoardService {
+
+}
