@@ -1,5 +1,7 @@
 package com.board.jooboard.board.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,6 +22,12 @@ public class BoardService {
 		board.setDelYn("N");
 		board.setBoardCnt(0);
 		boardDao.insert(board); 
+	}
+
+	@Transactional
+	public List<Board> selectBoardList() {
+		List<Board> selectBoardList = boardDao.selectBoardList();
+		return selectBoardList;
 	}
 
 }

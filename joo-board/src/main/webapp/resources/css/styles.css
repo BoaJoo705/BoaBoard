@@ -344,6 +344,13 @@ button {
   border-radius: 0;
 }
 
+.button{
+	border:1px solid blue;
+	background-color:rgba(0,0,0,0);
+	color:skyblue;
+	padding:5px;
+}
+
 button:focus:not(:focus-visible) {
   outline: 0;
 }

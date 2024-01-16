@@ -17,9 +17,9 @@ public class Board {
 	
 	private String delYn;
 	
-	private String regDt;
+	private String regDate;
 	
-	private String modDt;
+	private String modDate;
 	
 	private String atchYn;
 	

@@ -23,8 +23,17 @@
         	#{boardCnt},
         	#{delYn},
         	now(),
-        	#{modDt},
+        	#{modDate},
         	#{atchYn}
         )
     </insert>
+    
+    <select id="selectBoardList" resultType="com.board.jooboard.board.vo.Board">
+    	SELECT
+    		*
+   		FROM BOARD
+   		WHERE DEL_YN = "N"
+   		ORDER BY REG_DATE DESC
+   			
+    </select>
 </mapper>

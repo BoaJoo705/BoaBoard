@@ -1,6 +1,8 @@
 package com.board.jooboard.boardDao;
 
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -13,4 +15,6 @@ public interface BoardDao {
 	
 	// 게시글 등록
 	void insert(Board board);
+
+	List<Board> selectBoardList();
 }

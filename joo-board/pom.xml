@@ -77,6 +77,12 @@
 		</dependency>
 		<!-- jstl 연동 끝-->
 		
+		<!--타임리프 설치-->
+<!--		<dependency>-->
+<!--		    <groupId>org.springframework.boot</groupId>-->
+<!--		    <artifactId>spring-boot-starter-thymeleaf</artifactId>-->
+<!--		</dependency>-->
+		
 	</dependencies>
 
 	<build>

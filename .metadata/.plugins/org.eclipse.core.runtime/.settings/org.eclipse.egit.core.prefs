@@ -1,4 +1,7 @@
-GitRepositoriesView.GitDirectories=
-GitRepositoriesView.GitDirectories.relative=
+GitRepositoriesView.GitDirectories=C\:\\boaboard\\.git;
+GitRepositoriesView.GitDirectories.relative=.git;
+RepositorySearchDialogDeepSearch=true
+RepositorySearchDialogSearchPath=C\:\\boaboard\\.git
+RepositorySearchDialogSkipHidden=false
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1
